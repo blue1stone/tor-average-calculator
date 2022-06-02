@@ -16,10 +16,12 @@ function calculateTORAvg() {
 
 	let table = document.getElementsByClassName("treeTableWithIcons")[0];
 	if (table == undefined) {
-		alert("You don't seem to be on the correct webpage. Can't calculate average grade.");
+		alert(
+			"You don't seem to be on the correct webpage. Can't calculate average grade."
+		);
 		return;
 	}
-	
+
 	for (let i_row = 0; i_row < table.rows.length; i_row++) {
 		const ROW = table.rows[i_row];
 		let title = "";
@@ -32,7 +34,7 @@ function calculateTORAvg() {
 				typeof CELL.childNodes[1].id == "string" &&
 				CELL.childNodes[1].id.includes("unDeftxt") &&
 				typeof CELL.childNodes[0].title == "string" &&
-				CELL.childNodes[0].title.includes("fung")
+				CELL.childNodes[0].title.includes("Prüfung")
 			) {
 				title = CELL.innerText;
 			}
@@ -47,11 +49,11 @@ function calculateTORAvg() {
 				}
 			}
 		}
-		if (title != "" && !title.includes("BK")) {
+		if (title != "" && !title.includes("ÜBK")) {
 			tor_data.push({ title, grade, cp });
 		}
 	}
-	
+
 	let sum = 0;
 	let count = 0;
 	for (let i = 0; i < tor_data.length; i++) {
