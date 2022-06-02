@@ -15,6 +15,11 @@ function calculateTORAvg() {
 	let tor_data = [];
 
 	let table = document.getElementsByClassName("treeTableWithIcons")[0];
+	if (table == undefined) {
+		alert("You don't seem to be on the correct webpage. Can't calculate average grade.");
+		return;
+	}
+	
 	for (let i_row = 0; i_row < table.rows.length; i_row++) {
 		const ROW = table.rows[i_row];
 		let title = "";
