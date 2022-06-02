@@ -21,6 +21,6 @@
 		"128": "/images/logo_128x.png"
 	},
   "permissions": [
-    "storage", "activeTab", "scripting"
+    "activeTab", "scripting"
   ]
 }
