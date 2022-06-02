@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Calculates the Transcript of Records (TOR) average grade on ALMA",
 	"author": "Elias Ball",
-	"homepage_url": "https://path/to/homepage",
+	"homepage_url": "https://github.com/blue1stone/tor-average-calculator",
   "action": {
     "default_popup": "popup.html",
 		"default_icon": {
