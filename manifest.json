@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "TOR Average Grade Calculator",
+  "version": "1.0.0",
+  "description": "Calculates the Transcript of Records (TOR) average grade on ALMA",
+	"author": "Elias Ball",
+	"homepage_url": "https://path/to/homepage",
+  "action": {
+    "default_popup": "popup.html",
+		"default_icon": {
+      "16": "/images/logo_16x.png",
+      "32": "/images/logo_32x.png",
+      "48": "/images/logo_48x.png",
+      "128": "/images/logo_128x.png"
+    }
+  },
+	"icons": {
+		"16": "/images/logo_16x.png",
+		"32": "/images/logo_32x.png",
+		"48": "/images/logo_48x.png",
+		"128": "/images/logo_128x.png"
+	},
+  "permissions": [
+    "storage", "activeTab", "scripting"
+  ]
+}
