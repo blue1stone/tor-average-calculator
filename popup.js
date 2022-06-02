@@ -36,7 +36,9 @@ function calculateTORAvg() {
 				typeof CELL.childNodes[0].title == "string" &&
 				CELL.childNodes[0].title.includes("Prüfung")
 			) {
-				title = CELL.innerText;
+				if (!CELL.innerText.includes("ÜBK")) {
+					title = CELL.innerText;
+				}
 			}
 			if (
 				CELL.childNodes[0] != undefined &&
@@ -49,7 +51,7 @@ function calculateTORAvg() {
 				}
 			}
 		}
-		if (title != "" && !title.includes("ÜBK")) {
+		if (title != "") {
 			tor_data.push({ title, grade, cp });
 		}
 	}
